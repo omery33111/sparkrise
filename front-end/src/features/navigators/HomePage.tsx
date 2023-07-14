@@ -99,9 +99,13 @@ const HomePage = () => {
             </h5>
               </Card.Body>
             </Card>
-
+            <Nav>
+            <Nav.Link href="/scheduler/get_month">
             <Button variant="success" style = {{ height: "20%", width: "30%", position: "absolute", bottom: 5, left: -320,
                                                   boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>לתיאום וקביעת פגישה</Button>
+
+            </Nav.Link>
+            </Nav>
 
             </div>
 

@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { getAllMonths, getSingleMonth } from './schedulerAPI';
+import { getAllMonths } from './schedulerAPI';
 import { SchedulerState } from '../../models/Scheduler';
 import { RootState } from '../../app/store';
 
@@ -8,16 +8,6 @@ import { RootState } from '../../app/store';
 const initialState: SchedulerState = {
   schedules: []
 };
-
-
-
-// export const getSingleMonthAsync = createAsyncThunk(
-//   'scheduler/getSingleMonth',
-//   async (id: string) => {
-//     const response = await getSingleMonth(id);
-//     return response.data;
-//   }
-// );
 
 
 

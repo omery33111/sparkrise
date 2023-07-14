@@ -6,7 +6,8 @@ import App from './App';
 import './index.css';
 import Scheduler from './features/scheduler/Scheduler';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Callback from './features/callback/Callback';
+import 'bootstrap/dist/css/bootstrap.css';
+import HomePage from './features/navigators/HomePage';
 
 
 
@@ -21,19 +22,14 @@ root.render(
 
     <Routes>
 
-      <Route path = "/" element={<App />} />
+          <Route path = "/" element={<App />}>
 
+            <Route path = "/" element = {<HomePage />} />
 
-      <Route path = "/callback/post_callback/" element={<Callback />} />
+            <Route path = "/scheduler/get_month" element={<Scheduler />} />
 
-
-      <Route path = "/scheduler/get_month">
-        <Route index element = {<Scheduler />} />
-        <Route path = ":id" element = {<Scheduler />} />
-      </Route>
-      
-    </Routes>
-
+          </Route>
+        </Routes>
 
     </BrowserRouter>
     

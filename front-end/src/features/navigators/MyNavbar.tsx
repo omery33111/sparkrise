@@ -17,7 +17,7 @@ const MyNavbar = () => {
 
           <Nav>
 
-            <Nav.Link href="#pricing" style={{ color: 'white', position: 'absolute', top: 22, left: 850 }}><h5>SPARKRISE</h5></Nav.Link>
+            <Nav.Link href = "/" style={{ color: 'white', position: 'absolute', top: 22, left: 850 }}><h5>SPARKRISE</h5></Nav.Link>
 
           </Nav>
 

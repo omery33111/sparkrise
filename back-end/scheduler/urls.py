@@ -4,11 +4,8 @@ from . import views
 
 
 urlpatterns = [
-    path('post_scheduler/', views.post_scheduler),
+    path('post_month/', views.post_month),
     
-    path('get_scheduler/', views.get_scheduler),
+    path('get_month/', views.get_month),
 
-    path('delete_scheduler/<int:pk>/', views.delete_scheduler),
-
-    path('get_month/<int:pk>/', views.get_month),
 ]
