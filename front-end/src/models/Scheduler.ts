@@ -10,4 +10,5 @@ export interface Schedule {
   
   export interface SchedulerState {
     schedules: Schedule[];
+    // saveMonth: string;
   }

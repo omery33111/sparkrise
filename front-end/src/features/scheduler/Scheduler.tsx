@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { getAllMonthsAsync, selectAllMonths } from './schedulerSlice';
-import { Card } from 'react-bootstrap';
+import { getAllMonthsAsync, postMonthAsync, selectAllMonths } from './schedulerSlice';
+import { Button, Card } from 'react-bootstrap';
+import { selectIsLogged } from '../authentication/authenticationSlice';
 
 
 
@@ -11,6 +12,13 @@ const Scheduler = () => {
 
   const schedule = useAppSelector(selectAllMonths);
 
+  const isLogged = useAppSelector(selectIsLogged)
+
+
+  const handleButtonClick = () => {
+    dispatch(postMonthAsync());
+  };
+
   useEffect(() => {
       dispatch(getAllMonthsAsync());
   }, [dispatch]);
@@ -18,6 +26,12 @@ const Scheduler = () => {
   return (
 
     <div>
+
+    {isLogged && 
+    <div>
+    <Button variant = "success" onClick={handleButtonClick}>!חודש חדש עכשיו</Button>
+    </div>}
+
 
       
     <div style = {{position: "relative", left: 330, top: 190}}>
@@ -43,7 +57,7 @@ const Scheduler = () => {
         </div>
       ))}
     </div>
-    
+
 
 
 

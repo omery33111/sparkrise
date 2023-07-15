@@ -9,3 +9,11 @@ export function getAllMonths() {
     axios.get(`${schedulerURL}/get_month/`).then((res) => resolve({ data: res.data }))
   );
 }
+
+
+
+export function postMonth() {
+  return new Promise<{ data: any }>((resolve) =>
+    axios.post(`${schedulerURL}/post_month/`).then((res) => resolve({ data: res.data }))
+  );
+}

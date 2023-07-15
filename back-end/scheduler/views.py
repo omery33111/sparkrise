@@ -16,7 +16,7 @@ def post_month(request):
         current_date = datetime.now()
         current_month = current_date.month
         current_year = current_date.year
-        days_in_month = (current_date.replace(day=1) + timedelta(days=32)).replace(day=1) - timedelta(days=1)
+        days_in_month = (current_date.replace(day = 1) + timedelta(days = 32)).replace(day = 1) - timedelta(days=1)
 
         scheduler_data = {
             'month': current_month,
@@ -63,7 +63,7 @@ def post_month(request):
 def get_month(request):
     if request.method == 'GET':
         Schedulers = Scheduler.objects.all()
-        serializer = SchedulerSerializer(Schedulers, many=True)
+        serializer = SchedulerSerializer(Schedulers, many = True)
         return Response(serializer.data)
     
 

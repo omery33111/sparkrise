@@ -8,6 +8,7 @@ import Scheduler from './features/scheduler/Scheduler';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import HomePage from './features/navigators/HomePage';
+import Login from './features/authentication/Login';
 
 
 
@@ -27,6 +28,8 @@ root.render(
             <Route path = "/" element = {<HomePage />} />
 
             <Route path = "/scheduler/get_month" element={<Scheduler />} />
+
+            <Route path = "/authentication/login" element={<Login />} />
 
           </Route>
         </Routes>
