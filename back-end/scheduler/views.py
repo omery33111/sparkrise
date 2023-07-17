@@ -65,20 +65,3 @@ def get_month(request):
         Schedulers = Scheduler.objects.all()
         serializer = SchedulerSerializer(Schedulers, many = True)
         return Response(serializer.data)
-    
-
-
-# @api_view(["GET"])
-# def get_month(request, pk = -1):
-#     if request.method == "GET":
-#         month = Scheduler.objects.get(pk = pk)
-#         serializer = SchedulerSerializer(month)
-#         return Response(serializer.data, status = status.HTTP_200_OK)
-    
-
-
-# @api_view(['DELETE'])
-# def delete_scheduler(request, pk = -1):
-#     Schedule = Scheduler.objects.get(pk = pk)
-#     Schedule.delete()
-#     return Response(status = status.HTTP_204_NO_CONTENT)

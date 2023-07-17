@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { postCallback } from './callbackAPI';
+import { getCallbacks, postCallback } from './callbackAPI';
 import { CallbackState } from '../../models/Callback';
+import { RootState } from '../../app/store';
 
 
 
@@ -20,6 +21,16 @@ export const postCallbackAsync = createAsyncThunk(
 
 
 
+export const getCallbacksAsync = createAsyncThunk(
+  'callback/getCallbacks',
+  async () => {
+    const response = await getCallbacks();
+    return response.data;
+  }
+);
+
+
+
 export const callbackSlice = createSlice({
   name: 'callback',
   initialState,
@@ -30,14 +41,14 @@ export const callbackSlice = createSlice({
     },
   extraReducers: (builder) => {
     builder
-      // .addCase(getSingleMonthAsync.fulfilled, (state, action) =>
-      // {
-      //   state.schedule = action.payload;
-      // })
-
       .addCase(postCallbackAsync.fulfilled, (state, action) =>
       {
         state.callbacks = [...state.callbacks, action.payload];
+      })
+
+      .addCase(getCallbacksAsync.fulfilled, (state, action) =>
+      {
+        state.callbacks = action.payload;
       })
   },
 });
@@ -46,6 +57,6 @@ export const callbackSlice = createSlice({
 
 // export const { do } = schedulerSlice.actions;
 
-// export const selectAllMonths = (state: RootState) => state.scheduler.callback;
+export const selectCallbacks = (state: RootState) => state.callback.callbacks;
 
 export default callbackSlice.reducer;

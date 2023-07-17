@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../app/hooks';
 import { postCallbackAsync } from './callbackSlice';
 
@@ -23,7 +22,7 @@ const Callback = () => {
       location: location,
       phone_number: phoneNumber,
       email: email,
-      message: message || '.ללא הודעה'
+      message: message || 'ללא הודעה.'
     };
 
     dispatch(postCallbackAsync(callbackData));
@@ -95,15 +94,21 @@ const Callback = () => {
               </Col>
               <Col>
               <Form.Group controlId="formLocation">
-                  <Form.Label style = {{color: "white"}}>איזור בארץ</Form.Label>
-                  <Form.Control
-                  style = {{textAlign: 'right', boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}
-                    type="text"
-                    value = {location}
-                    onChange={(event) => setLocation(event.target.value)}
-                    required
-                  />
-                </Form.Group>
+              <Form.Label style = {{color: "white"}}>איזור בארץ</Form.Label>
+              <Form.Select
+                value={location}
+                onChange={(event) => setLocation(event.target.value)}
+                required
+                style = {{textAlign: "right"}}
+              >
+                <option value="">בחר איזור</option>
+                <option value="צפון">צפון</option>
+                <option value="מרכז">מרכז</option>
+                <option value="דרום">דרום</option>
+                <option value="אילת">אילת</option>
+                
+              </Form.Select>
+            </Form.Group>
                 
               </Col>
             </Row>

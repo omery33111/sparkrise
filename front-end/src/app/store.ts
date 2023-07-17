@@ -2,14 +2,20 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import schedulerReducer from '../features/scheduler/schedulerSlice';
 import callbackReducer from '../features/callback/callbackSlice';
 import authenticationReducer from '../features/authentication/authenticationSlice';
+import appointmentReducer from '../features/appointment/appointmentSlice';
+
+
 
 export const store = configureStore({
   reducer: {
     scheduler: schedulerReducer,
     callback: callbackReducer,
-    authentication: authenticationReducer
+    authentication: authenticationReducer,
+    appointment: appointmentReducer
   },
 });
+
+
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;

@@ -6,5 +6,5 @@ from . import views
 urlpatterns = [
     path('post_callback/', views.post_callback),
     
-    path('get_callback/', views.get_callback),
+    path('get_callbacks/', views.get_callback),
 ]

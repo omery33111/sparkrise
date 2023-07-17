@@ -1,10 +1,9 @@
-from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.permissions import BasePermission
 
-from .models import Callback
-from .serializers import CallbackSerializer
+from .models import Appointment
+from .serializers import AppointmentSerializer
 
 
 
@@ -15,20 +14,20 @@ class IsStaff(BasePermission):
 
 
 @api_view(['POST'])
-def post_callback(request):
+def post_appointment(request):
     if request.method == 'POST':
-        serializer = CallbackSerializer(data = request.data)
+        serializer = AppointmentSerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.data, status = 201)
+        return Response(serializer.errors, status = 400)
 
 
 
-@api_view(['GET'])
 @permission_classes([IsStaff])
-def get_callback(request):
+@api_view(['GET'])
+def get_appointments(request):
     if request.method == 'GET':
-        Schedulers = Callback.objects.all()
-        serializer = CallbackSerializer(Schedulers, many=True)
+        appointments = Appointment.objects.all()
+        serializer = AppointmentSerializer(appointments, many = True)
         return Response(serializer.data)

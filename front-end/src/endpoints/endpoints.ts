@@ -20,3 +20,8 @@ export const callbackURL = "http://127.0.0.1:8000/callback";
 
 // ------------------------- AUTHENTICATION ENDPOINTS:
 export const loginURL = "http://127.0.0.1:8000/authentication/login/";
+
+
+
+// ------------------------- AUTHENTICATION ENDPOINTS:
+export const appointmentURL = "http://127.0.0.1:8000/appointment";
