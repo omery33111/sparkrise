@@ -4,6 +4,7 @@ import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import { useNavigate } from 'react-router-dom';
 import { loginAsync, reset } from "./authenticationSlice"
 import { Button } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 
 
@@ -42,15 +43,31 @@ const Login = () => {
         }));
       };
 
-      const onSubmit = (e: any) => {
-        e.preventDefault();
-      
-        const userData = {
-          username,
-          password,
-        };
-        dispatch(loginAsync(userData))
+const onSubmit = (e: any) => {
+  e.preventDefault();
+
+  const userData = {
+    username,
+    password,
   };
+
+  dispatch(loginAsync(userData))
+    .then(() => {
+      toast.success(`ברוך שובך ${username}!`, {
+        position: 'top-center',
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      });
+    })
+    .catch(() => {
+      toast.error('.שגיאה בהתחברות. נסה שוב');
+    });
+};
 
   return (
     <div className="container d-flex justify-content-center">

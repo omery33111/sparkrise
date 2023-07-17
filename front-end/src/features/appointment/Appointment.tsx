@@ -35,7 +35,7 @@ const Appointment = () => {
       await dispatch(postAppointmentAsync(appointmentData));
       toast.success(`התור נקבע בהצלחה לשעה ${time} לתאריך ${savedDate}.${currentMonth}.${currentYear}`, {
         position: 'top-center',
-        autoClose: 3000,
+        autoClose: 5000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,
