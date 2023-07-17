@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { AppointmentState } from '../../models/Appointment';
-import { getAppointments, postAppointment } from './appointmentAPI';
+import { postAppointment } from './appointmentAPI';
 import { RootState } from '../../app/store';
 
 
@@ -22,17 +22,6 @@ export const postAppointmentAsync = createAsyncThunk(
 
 
 
-export const getAppointmentsAsync = createAsyncThunk(
-  'appointment/getAppointments',
-  async () => {
-    const response = await getAppointments();
-    return response.data;
-  }
-);
-
-
-
-
 export const appointmentSlice = createSlice({
   name: 'appointment',
   initialState,
@@ -44,11 +33,6 @@ export const appointmentSlice = createSlice({
     },
   extraReducers: (builder) => {
     builder
-      .addCase(getAppointmentsAsync.fulfilled, (state, action) =>
-      {
-        state.appointments = action.payload
-      })
-
       .addCase(postAppointmentAsync.fulfilled, (state, action) =>
       {
         state.appointments = [...state.appointments, action.payload];

@@ -3,6 +3,7 @@ import schedulerReducer from '../features/scheduler/schedulerSlice';
 import callbackReducer from '../features/callback/callbackSlice';
 import authenticationReducer from '../features/authentication/authenticationSlice';
 import appointmentReducer from '../features/appointment/appointmentSlice';
+import administratorReducer from '../features/administrator/administratorSlice';
 
 
 
@@ -11,7 +12,8 @@ export const store = configureStore({
     scheduler: schedulerReducer,
     callback: callbackReducer,
     authentication: authenticationReducer,
-    appointment: appointmentReducer
+    appointment: appointmentReducer,
+    administrator: administratorReducer
   },
 });
 

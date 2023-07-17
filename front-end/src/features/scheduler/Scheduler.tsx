@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { getAllMonthsAsync, postMonthAsync, selectAllMonths } from './schedulerSlice';
 import { Button, Card } from 'react-bootstrap';
-import { selectIsLogged } from '../authentication/authenticationSlice';
 import Appointment from '../appointment/Appointment';
 import { selectDay, selectSelectedDay } from '../appointment/appointmentSlice';
 
@@ -42,7 +41,7 @@ const Scheduler = () => {
 
         {storedIsStaff && 
     <div style = {{position: "absolute", top: "15%", left: "33%"}}>
-    <Button style = {{boxShadow: '0 14px 20px 0 rgba(0, 0, 0, 0.6), 0 1px 60px 0 rgba(0, 0, 0, 0.60)'}} variant = "success" onClick={handleButtonClick}>!חודש חדש עכשיו</Button>
+    <Button style = {{boxShadow: '0 7px 15px 0 rgba(0, 0, 0, 0.6), 0 1px 20px 0 rgba(0, 0, 0, 0.20)'}} variant = "success" onClick={handleButtonClick}>!חודש חדש עכשיו</Button>
     </div>}
 
     <div style = {{ position: "absolute", left: 270, top: 260 }}>

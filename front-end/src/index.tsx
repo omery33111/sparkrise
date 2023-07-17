@@ -9,7 +9,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import HomePage from './features/navigators/HomePage';
 import Login from './features/authentication/Login';
-import AllAppointments from './features/appointment/AllAppointments';
+import AppointmentsCallbacks from './features/administrator/AppointmentsCallbacks';
+import ChangeAppointment from './features/administrator/ChangeAppointment';
 
 
 
@@ -32,7 +33,11 @@ root.render(
 
             <Route path = "/authentication/login" element={<Login />} />
 
-            <Route path = "/appointment/get_appointments" element={<AllAppointments />} />
+            <Route path = "/administrator/get_appointments" element={<AppointmentsCallbacks />} />
+            <Route path = "/administrator/get_appointment">
+              <Route index element = {<ChangeAppointment />} />
+              <Route path = ":id" element = {<ChangeAppointment />} />
+            </Route>
 
           </Route>
         </Routes>

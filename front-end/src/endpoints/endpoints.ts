@@ -25,3 +25,8 @@ export const loginURL = "http://127.0.0.1:8000/authentication/login/";
 
 // ------------------------- AUTHENTICATION ENDPOINTS:
 export const appointmentURL = "http://127.0.0.1:8000/appointment";
+
+
+
+// ------------------------- ADMINISTRATOR ENDPOINTS:
+export const administratorURL = "http://127.0.0.1:8000/administrator";

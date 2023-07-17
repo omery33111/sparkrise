@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'scheduler',
     'callback',
     'appointment',
+    'administrator',
 ]
 
 

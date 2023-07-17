@@ -51,14 +51,6 @@ def post_month(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
-
-
-
-
-
-
-
 @api_view(['GET'])
 def get_month(request):
     if request.method == 'GET':

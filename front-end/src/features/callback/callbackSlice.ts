@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { getCallbacks, postCallback } from './callbackAPI';
+import { postCallback } from './callbackAPI';
 import { CallbackState } from '../../models/Callback';
 import { RootState } from '../../app/store';
 
@@ -21,16 +21,6 @@ export const postCallbackAsync = createAsyncThunk(
 
 
 
-export const getCallbacksAsync = createAsyncThunk(
-  'callback/getCallbacks',
-  async () => {
-    const response = await getCallbacks();
-    return response.data;
-  }
-);
-
-
-
 export const callbackSlice = createSlice({
   name: 'callback',
   initialState,
@@ -44,11 +34,6 @@ export const callbackSlice = createSlice({
       .addCase(postCallbackAsync.fulfilled, (state, action) =>
       {
         state.callbacks = [...state.callbacks, action.payload];
-      })
-
-      .addCase(getCallbacksAsync.fulfilled, (state, action) =>
-      {
-        state.callbacks = action.payload;
       })
   },
 });

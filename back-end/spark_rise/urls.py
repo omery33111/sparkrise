@@ -7,4 +7,5 @@ urlpatterns = [
     path('scheduler/', include('scheduler.urls')),
     path('callback/', include('callback.urls')),
     path('appointment/', include('appointment.urls')),
+    path('administrator/', include('administrator.urls')),
 ]

@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useAppDispatch } from '../../app/hooks';
 import { postCallbackAsync } from './callbackSlice';
+import { toast } from 'react-toastify';
+
+
 
 const Callback = () => {
   const dispatch = useAppDispatch();
@@ -25,14 +28,27 @@ const Callback = () => {
       message: message || 'ללא הודעה.'
     };
 
-    dispatch(postCallbackAsync(callbackData));
-
-    setFirstName('');
-    setLastName('');
-    setLocation('');
-    setPhoneNumber('');
-    setEmail('');
-    setMessage('');
+    try {
+      await dispatch(postCallbackAsync(callbackData));
+      toast.success('הפרטים נקלטו בהצלחה!', {
+        position: 'top-center',
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      });
+      setFirstName('');
+      setLastName('');
+      setLocation('');
+      setPhoneNumber('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      toast.error('.פרטים שגויים. נסה שוב');
+    }
 
   };
 

@@ -114,6 +114,7 @@ export const selectUser = (state: RootState) => state.authentication.userName;
 export const selectIsLogged = (state: RootState) => state.authentication.isLogged;
 export const selectIsLoading = (state: RootState) => state.authentication.isLoading;
 export const selectIsError = (state: RootState) => state.authentication.isError;
+export const selectIsStaff = (state: RootState) => state.authentication.is_staff;
 
 export const { reset, LoggedOff, LoggedOn } = authenticationSlice.actions;
 

@@ -8,13 +8,15 @@ const MyNavbar = () => {
 
   const dispatch = useAppDispatch()
 
-  const storedIsStaff = JSON.parse(localStorage.getItem('is_staff') as string);
+  const isLogged = useAppSelector(selectIsLogged)
 
   const onLogout = () => {
     dispatch(logoutAsync());
     dispatch(reset());
     window.location.href = "/";
   };
+
+  const storedIsStaff = JSON.parse(localStorage.getItem('is_staff') as string)
 
   return (
 
@@ -34,12 +36,12 @@ const MyNavbar = () => {
           {storedIsStaff && 
           <Nav>
 
-            <Nav.Link href = "/appointment/get_appointments" style={{ color: 'white', position: 'absolute', top: 22, left: 1550 }}>פורטל</Nav.Link>
+            <Nav.Link href = "/administrator/get_appointments" style={{ color: 'white', position: 'absolute', top: 22, left: 1550 }}>פורטל</Nav.Link>
         
           </Nav>}
 
           <Nav>
-        {storedIsStaff ? (
+        {isLogged ? (
           <Nav.Link style = {{ position: 'absolute', top: 15, left: 1650 }}>
             <Button style = {{ color: 'white'}} variant = "none" onClick={() => onLogout()} >התנתקות</Button>
           </Nav.Link>
