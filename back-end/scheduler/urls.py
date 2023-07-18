@@ -8,4 +8,6 @@ urlpatterns = [
     
     path('get_month/', views.get_month),
 
+    path('single_month/<int:pk>/', views.single_month),
+
 ]

@@ -18,19 +18,19 @@ const NavTransferor = () => {
 
             <Nav>
 
-                <Nav.Link href="#pricing" style = {{color: 'white', position: "absolute", top: 45, left: 1070}}><h5>אודותיי</h5></Nav.Link>
+                <Nav.Link href="#pricing" style = {{color: 'white', position: "absolute", top: 45, left: "58%"}}><h5>אודותיי</h5></Nav.Link>
 
             </Nav>
 
             <Nav>
 
-                <Nav.Link href="/scheduler/get_month" style = {{color: 'white', position: "absolute", top: 45, left: 870}}><h5>קביעת פגישה</h5></Nav.Link>
+                <Nav.Link href="/scheduler/get_month" style = {{color: 'white', position: "absolute", top: 45, left: "45%"}}><h5>קביעת פגישה</h5></Nav.Link>
 
             </Nav>
 
             <Nav>
 
-                <Nav.Link href="#callback" style = {{color: 'white', position: "absolute", top: 45, left: 670}}><h5>יצירת קשר</h5></Nav.Link>
+                <Nav.Link href="#callback" style = {{color: 'white', position: "absolute", top: 45, left: "32%"}}><h5>יצירת קשר</h5></Nav.Link>
 
             </Nav>
 

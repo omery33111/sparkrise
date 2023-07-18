@@ -36,13 +36,13 @@ const MyNavbar = () => {
           {storedIsStaff && 
           <Nav>
 
-            <Nav.Link href = "/administrator/get_appointments" style={{ color: 'white', position: 'absolute', top: 22, left: 1550 }}>פורטל</Nav.Link>
+            <Nav.Link href = "/administrator/get_appointments" style={{ color: 'white', position: 'absolute', top: 22, right: "15%" }}>פורטל</Nav.Link>
         
           </Nav>}
 
           <Nav>
         {isLogged ? (
-          <Nav.Link style = {{ position: 'absolute', top: 15, left: 1650 }}>
+          <Nav.Link style = {{ position: 'absolute', top: 15, right: "7%" }}>
             <Button style = {{ color: 'white'}} variant = "none" onClick={() => onLogout()} >התנתקות</Button>
           </Nav.Link>
         ) : (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, Card, Col, Container, Nav, Row } from 'react-bootstrap'
 import NavTransferor from './NavTransferor'
 import Callback from '../callback/Callback'
@@ -40,14 +39,14 @@ const HomePage = () => {
 
           <Col md={6} className="d-flex align-items-center">
 
-          <Card style={{ width: "20%", height: "20%", position: "absolute", transform: "translateX(-840px) translateY(140px)", zIndex: '10',
+          <Card style={{ width: "20%", height: "20%", position: "absolute", transform: "translateX(-215%) translateY(140px)", zIndex: '10',
                           boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>
             <div style = {{height: "15px"}} />
             <Card.Title style = {{textAlign: 'center'}}>?מעוניינים לשמוע עוד</Card.Title>
             <Card.Body style = {{textAlign: 'right'}}><small>,רב הקהל מעוניים לשמוע עוד לפני תיאום פגישה <br />
                                                               !צרו קשר ואחזור אליכם בהקדם</small></Card.Body>
           <Nav.Link href = '#callback'>
-           <Button variant="success" style = {{ height: "25%", position: "absolute", bottom: 15, left: 110,
+           <Button variant="success" style = {{ height: "25%", position: "absolute", bottom: 15, left: "30%",
                                                 boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>טופס להשארת פרטים</Button></Nav.Link>
           </Card>
           
@@ -55,7 +54,7 @@ const HomePage = () => {
 
 
             {/* arrow1 picture */}
-            <img style={{ position: "absolute", top: 600, left: 460, transform: 'rotate(45deg) scaleX(-1)', zIndex: '10'}}
+            <img style={{ position: "absolute", top: "62%", left: "24%", transform: 'rotate(45deg) scaleX(-1)', zIndex: '10'}}
               className="d-block w-10"
               src={require('../../images/arrow.png')}
               alt="Second slide"
@@ -63,7 +62,7 @@ const HomePage = () => {
               width = "135"/>
 
               {/* arrow2 picture */}
-            <img style={{ position: "absolute", bottom: 90, left: 250, transform: 'rotate(130deg)', zIndex: '10' }}
+            <img style={{ position: "absolute", bottom: "10%", left: "10%", transform: 'rotate(130deg)', zIndex: '10' }}
               className="d-block w-10"
               src={require('../../images/arrow.png')}
               alt="Second slide"
@@ -116,7 +115,7 @@ const HomePage = () => {
 
       <div style = {{height: "400px"}}/>
       
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: "207px", position: "absolute", transform: "translateX(360px) translateY(-240px)"}}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: "207px", position: "absolute", right: "0%", transform: "translateY(-75%)"}}>
 
 
     <div>

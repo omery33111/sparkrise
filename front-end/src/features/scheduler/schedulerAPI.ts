@@ -11,6 +11,12 @@ export function getAllMonths() {
 }
 
 
+export function getMonth(id: string) {
+  return new Promise<{ data: Schedule }>((resolve) =>
+    axios.get(`${schedulerURL}/single_month/${id}/`).then((res) => resolve({ data: res.data }))
+  );
+}
+
 
 export function postMonth() {
   return new Promise<{ data: any }>((resolve) =>

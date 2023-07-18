@@ -57,3 +57,12 @@ def get_month(request):
         Schedulers = Scheduler.objects.all()
         serializer = SchedulerSerializer(Schedulers, many = True)
         return Response(serializer.data)
+
+
+
+@api_view(["GET"])
+def single_month(request, pk = -1):
+    if request.method == "GET":
+        single_month = Scheduler.objects.get(pk = pk)
+        serializer = SchedulerSerializer(single_month)
+        return Response(serializer.data, status = status.HTTP_200_OK)

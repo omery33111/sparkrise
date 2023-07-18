@@ -12,6 +12,7 @@ const Scheduler = () => {
   const dispatch = useAppDispatch();
 
   const schedule = useAppSelector(selectAllMonths);
+  // const singleMonth = useAppSelector(selectMonth);
 
   const storedIsStaff = JSON.parse(localStorage.getItem('is_staff') as string);
 
@@ -38,16 +39,16 @@ const Scheduler = () => {
     <div>
 
         <Appointment />
-
+        
         {storedIsStaff && 
     <div style = {{position: "absolute", top: "15%", left: "33%"}}>
     <Button style = {{boxShadow: '0 7px 15px 0 rgba(0, 0, 0, 0.6), 0 1px 20px 0 rgba(0, 0, 0, 0.20)'}} variant = "success" onClick={handleButtonClick}>!חודש חדש עכשיו</Button>
     </div>}
 
     <div style = {{ position: "absolute", left: 270, top: 260 }}>
-
     <div style = {{backgroundColor: "#D9A394", position: "absolute", left: -37, top: -50, width: "92vh", height: "70vh",
                     boxShadow: '0 14px 20px 0 rgba(0, 0, 0, 0.6), 0 1px 60px 0 rgba(0, 0, 0, 0.60)'}}></div>
+                    
       {schedule.map((scheduler) => (
         <div key={scheduler.id}>
           {Array.from({ length: scheduler.days }, (_, index) => index + 1).map((number, index) => (

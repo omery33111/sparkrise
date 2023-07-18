@@ -2,7 +2,7 @@
 
 
 export interface Schedule {
-    id?: string;
+    id: string;
     month: string;
     year: number;
     days: number;
@@ -10,5 +10,6 @@ export interface Schedule {
   
   export interface SchedulerState {
     schedules: Schedule[];
+    month: Schedule;
     // saveMonth: string;
   }

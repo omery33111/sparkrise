@@ -30,7 +30,7 @@ const Callback = () => {
 
     try {
       await dispatch(postCallbackAsync(callbackData));
-      toast.success('הפרטים נקלטו בהצלחה!', {
+      toast.success('הפרטים התקבלו בהצלחה!', {
         position: 'top-center',
         autoClose: 3000,
         hideProgressBar: true,
@@ -161,11 +161,11 @@ const Callback = () => {
 
   </Container>
 
-  <div style={{ color: 'white', position: "absolute", transform: "translateX(1260px) translateY(-120px)"}}>
+  <div style={{ color: 'white', position: "absolute", left: "64%", transform: "translateY(-90%)"}}>
 
   <h3>קבלת ייעוץ לפגישה</h3>
 
-  <div style = {{textAlign: "right", position: "relative", transform: "translateX(-150px) translateY(25px)"}}>
+  <div style = {{textAlign: "right", position: "relative", left: "-25%", transform: "translateY(22%)"}}>
     ,אני מאפשרת דיאלוג ראשוני למען תיאום והבנה של התהליך<br />
     .נושא ומהות התהליך ועוד פרטים עניניים<br />
     <br />
@@ -176,7 +176,7 @@ const Callback = () => {
 
   </div>
 
-  <img style={{ position: "relative", bottom: -65, left: 1230, filter: "invert(100%)"}}
+  <img style={{ position: "relative", bottom: -65, left: "65%", filter: "invert(100%)"}}
           className="d-block w-10"
           src={require('../../images/24.png')}
           alt="24 hours"
