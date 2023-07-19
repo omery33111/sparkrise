@@ -1,4 +1,4 @@
-![White Black Bold Minimalist Beauty Blogger Logo](https://github.com/omery33111/omery33111/assets/110463400/ca2a887f-03e2-466f-8d1e-2c923c582f4a)
+![Sparkrise](https://github.com/omery33111/omery33111/assets/110463400/bbfb0005-f142-4352-8bcc-9d5b77c3de4f)
 #
 
 [![Live Netlify Server](https://img.shields.io/badge/Live%20on-Netlify-00ad9f.svg)](https://sparkrise.netlify.app/)
