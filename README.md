@@ -1,16 +1,11 @@
-<div style="display: flex; justify-content: center;">
-  <img src="https://github.com/omery33111/omery33111/assets/110463400/ca2a887f-03e2-466f-8d1e-2c923c582f4a" alt="White Black Bold Minimalist Beauty Blogger Logo">
-</div>
-
+![White Black Bold Minimalist Beauty Blogger Logo](https://github.com/omery33111/omery33111/assets/110463400/ca2a887f-03e2-466f-8d1e-2c923c582f4a)
 #
 
-<div style="display: flex; justify-content: center;">
 [![Live Netlify Server](https://img.shields.io/badge/Live%20on-Netlify-00ad9f.svg)](https://sparkrise.netlify.app/)
 
 [![Last Commit on GitHub](https://img.shields.io/github/last-commit/omery33111/sparkrise.svg)](https://github.com/omery33111/sparkrise/commits/main)
 
 [![Pull Requests](https://img.shields.io/github/issues-pr/omery33111/lops-ecommerce.svg?labelColor=24292E&logo=github&logoColor=white)](https://github.com/omery33111/lops-ecommerce/pulls)
-</div>
 
 
 ## Table of Contents
