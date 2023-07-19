@@ -101,7 +101,7 @@ const handleCallbackDelete = async (id: string) => {
           <h1 style = {{color: "white", position: "relative", right: "-15%"}}>השאירו פרטים</h1>
           <br/>
           <Accordion style = {{width: "130%"}}>
-            {callbacks.map((callback, index) => (
+            {[...callbacks].reverse().map((callback, index) => (
               <Accordion.Item key={index} eventKey={index.toString()}>
                 <Accordion.Header>
                   {callback.first_name} {callback.last_name}
@@ -128,7 +128,7 @@ const handleCallbackDelete = async (id: string) => {
           <h1 style={{ color: "white", position: "relative", right: 25 }}>תורים</h1>
           <br />
           <Accordion style={{ width: "130%" }}>
-            {appointments.map((appointment, index) => (
+            {[...appointments].reverse().map((appointment, index) => (
               <Accordion.Item key={index} eventKey={index.toString()}>
                 <Accordion.Header>
                   {appointment.first_name} {appointment.last_name} - {appointment.time}
