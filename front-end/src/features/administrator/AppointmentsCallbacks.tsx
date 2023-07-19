@@ -139,7 +139,9 @@ const handleCallbackDelete = async (id: string) => {
 
                   <p style={{ position: "absolute", right: "", transform: "translateY(-40px)" }}>
                 <span>
-                  <a href={"/administrator/get_appointment/" + appointment.id} style={{ color: "blue", textDecoration: "none" }}>ערוך</a>
+                <a href={`/administrator/get_appointment/${appointment.id}`} style={{ color: "blue", textDecoration: "none" }}>
+                  ערוך
+                </a>
                 </span>{" "}
                 |{" "}
                 <span>
