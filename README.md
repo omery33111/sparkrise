@@ -1,11 +1,13 @@
-![White Black Bold Minimalist Beauty Blogger Logo](https://github.com/omery33111/omery33111/assets/110463400/ca2a887f-03e2-466f-8d1e-2c923c582f4a)
+<div style="text-align:center">
+  <img src="https://github.com/omery33111/omery33111/assets/110463400/ca2a887f-03e2-466f-8d1e-2c923c582f4a" alt="White Black Bold Minimalist Beauty Blogger Logo">
+</div>
 #
 
 [![Live Netlify Server](https://img.shields.io/badge/Live%20on-Netlify-00ad9f.svg)](https://sparkrise.netlify.app/)
 
 [![Last Commit on GitHub](https://img.shields.io/github/last-commit/omery33111/sparkrise.svg)](https://github.com/omery33111/sparkrise/commits/main)
 
-[![Pull Requests](https://img.shields.io/github/issues-pr/omery33111/lops-ecommerce.svg?labelColor=24292E&logo=github&logoColor=white)](https://github.com/omery33111/lops-ecommerce/pulls)
+[![Pull Requests](https://img.shields.io/github/issues-pr/omery33111/sparkrise.svg?labelColor=24292E&logo=github&logoColor=white)](https://github.com/omery33111/sparkrise/pulls)
 
 
 ## Table of Contents
@@ -118,7 +120,7 @@ Ensure to designate any external server as marked and remove the marking from th
 | --- | --- | --- |
 | 4 | `npm start` | Run the front-end server |
 
-**Now you will be able to access LOPS in your local host** "http://localhost:3000".
+**Now you will be able to access SPARKRISE in your local host** "http://localhost:3000".
 
 
 ## Admin & Staff
