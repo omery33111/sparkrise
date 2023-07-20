@@ -55,7 +55,7 @@ const Appointment = () => {
 
   return (
     <div>
-      <div style={{ textAlign: "right", width: "40%", position: "fixed", transform: "translateX(175%) translateY(85%)"}}>
+      <div style={{ textAlign: "right", width: "40%", position: "relative", left: "71%", transform: "translateY(75%)"}}>
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col md={6}>

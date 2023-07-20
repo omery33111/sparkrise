@@ -77,7 +77,7 @@ const Scheduler = () => {
 
 
 
-    <div style = {{height: "60vh"}} />
+    <div style = {{height: "40vh"}} />
     </div>
     
   );

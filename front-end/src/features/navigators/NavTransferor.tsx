@@ -17,19 +17,19 @@ const NavTransferor = () => {
     <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
         <Nav>
-            <Nav.Link href="#pricing" style={{ color: 'white', position: "absolute", top: 45, left: "58%" }}>
+            <Nav.Link href="#pricing" style={{ color: 'white', position: "absolute", top: 45, left: "63%" }}>
                 <h5>אודותיי</h5>
             </Nav.Link>
         </Nav>
 
         <Nav>
-            <Nav.Link href="/scheduler/get_month" style={{ color: 'white', position: "absolute", top: 45, left: "45%" }}>
+            <Nav.Link href="/scheduler/get_month" style={{ color: 'white', position: "absolute", top: 45, left: "46.5%" }}>
                 <h5>קביעת פגישה</h5>
             </Nav.Link>
         </Nav>
 
         <Nav>
-            <Nav.Link href="#callback" style={{ color: 'white', position: "absolute", top: 45, left: "32%" }}>
+            <Nav.Link href="#callback" style={{ color: 'white', position: "absolute", top: 45, left: "31%" }}>
                 <h5>יצירת קשר</h5>
             </Nav.Link>
         </Nav>
