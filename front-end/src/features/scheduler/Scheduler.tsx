@@ -36,7 +36,7 @@ const Scheduler = () => {
 
   return (
 
-    <div>
+    <div style={{ overflow: "hidden" }}>
 
         <Appointment />
         

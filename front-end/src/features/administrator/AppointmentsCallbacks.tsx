@@ -93,7 +93,7 @@ const handleCallbackDelete = async (id: string) => {
   
   return (
 
-    <div style={{ height: `${pageHeight}px` }}>
+    <div style={{ height: `${pageHeight}px`, overflow: "hidden" }}>
       <div style={{ height: '10vh' }} />
       <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: "#D9A394", height: "90%"}}>
         <div style={{ marginRight: '22%', textAlign: 'right' }}>

@@ -46,7 +46,7 @@ const MyNavbar = () => {
                   </Button>
                 </Nav.Link>
               ) : (
-                <Nav.Link href="/authentication/login" style={{ color: 'white', position: 'absolute', top: 22, left: 1650 }}>
+                <Nav.Link href="/authentication/login" style={{ color: 'white', position: 'absolute', top: 22, right: "7%" }}>
                   התחברות כצוות
                 </Nav.Link>
               )}

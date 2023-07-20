@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       
-      <div style = {{height: "60px"}} />
+      <div style = {{height: "60px", overflow: "hidden" }} />
 
       <NavTransferor />
 
@@ -39,45 +39,25 @@ const HomePage = () => {
 
           <Col md={6} className="d-flex align-items-center">
 
-          <Card style={{ width: "20%", height: "20%", position: "absolute", transform: "translateX(-215%) translateY(140px)", zIndex: '10',
-                          boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>
-            <div style = {{height: "15px"}} />
-            <Card.Title style = {{textAlign: 'center'}}>?מעוניינים לשמוע עוד</Card.Title>
-            <Card.Body style = {{textAlign: 'right'}}><small>,רב הקהל מעוניים לשמוע עוד לפני תיאום פגישה <br />
-                                                              !צרו קשר ואחזור אליכם בהקדם</small></Card.Body>
-          <Nav.Link href = '#callback'>
-           <Button variant="success" style = {{ height: "25%", position: "absolute", bottom: 15, left: "30%",
-                                                boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>טופס להשארת פרטים</Button></Nav.Link>
-          </Card>
-          
+      
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+             <div style={{ position: "relative", width: "310%", textAlign: 'right', left: "0%", bottom: "-12%" }}>
 
-
-
-            {/* arrow1 picture */}
-            <img style={{ position: "absolute", top: "62%", left: "24%", transform: 'rotate(45deg) scaleX(-1)', zIndex: '10'}}
-              className="d-block w-10"
-              src={require('../../images/arrow.png')}
-              alt="Second slide"
-              height="85"
-              width = "135"/>
-
-              {/* arrow2 picture */}
-            <img style={{ position: "absolute", bottom: "10%", left: "10%", transform: 'rotate(130deg)', zIndex: '10' }}
-              className="d-block w-10"
-              src={require('../../images/arrow.png')}
-              alt="Second slide"
-              height="85"
-              width = "135"/>
-
-            <div style={{ position: "absolute", top: 435, right: 700, textAlign: 'right' }}>
-
-            <Card style = {{ width: "110%", height: "520px", backgroundColor: 'rgba(245, 245, 245, 0.1)' }}>
+            <Card style = {{ position: "relative", right: "140%", width: "200%", backgroundColor: 'rgba(245, 245, 245, 0.1)' }}>
             <Card.Body>
 
             <div style = {{height: "35px"}} />
 
-            <h1 style={{ color: "white", width: "50%", borderRadius: '30px', position: "relative", right: -215,
-                          boxShadow: '0 10px 12px 0 rgba(0, 0, 0, 0.3), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}} className="p-3 mb-2 bg-light text-dark">בואו לשמוע על הקורס שלי</h1>
+            <h1 style={{ color: "white", width: "50%", borderRadius: '30px', position: "relative", right: "-25%",
+                          boxShadow: '0 10px 12px 0 rgba(0, 0, 0, 0.3), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}} className="p-3 mb-2 bg-light text-dark d-flex align-items-center justify-content-center">בואו לשמוע על הקורס שלי</h1>
 
             <div style = {{height: "65px"}} />
 
@@ -97,82 +77,109 @@ const HomePage = () => {
                     
             </h5>
               </Card.Body>
-            </Card>
-            <Nav>
+
+
+              <Nav>
             <Nav.Link href="/scheduler/get_month">
-            <Button variant="success" style = {{ height: "20%", width: "30%", position: "absolute", bottom: 5, left: -320,
+            <Button variant="success" style = {{ position: "relative", width: "130%", height: "250%", bottom: "150%", left: "-100%",
                                                   boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>לתיאום וקביעת פגישה</Button>
 
             </Nav.Link>
             </Nav>
+            </Card>
+
 
             </div>
+                                                                          
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+            <Card style={{ width: "200%", height: "37%", position: "relative", right: "160%", bottom: "25%",
+                          boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>
+            <div style = {{height: "15px"}} />
+            <Card.Title style = {{textAlign: 'center'}}>?מעוניינים לשמוע עוד</Card.Title>
+            <Card.Body style = {{textAlign: 'right'}}><small>,רב הקהל מעוניים לשמוע עוד לפני תיאום פגישה <br />
+                                                              !צרו קשר ואחזור אליכם בהקדם</small>
+                                                              
+                                                              
+                                                              
+                                                              </Card.Body>
+          <Nav.Link href = '#callback'>
+           <Button variant="success" style = {{ height: "25%", position: "absolute", bottom: 15, left: "30%",
+                                                boxShadow: '0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}}>טופס להשארת פרטים</Button></Nav.Link>
+
+
+
+
+
+
+
+
+
+
+
+          </Card>
+          
+           {/* here */}
 
           </Col>
 
         </Row>
       </Container>
 
-      <div style = {{height: "400px"}}/>
+      <div style = {{height: "200px"}}/>
       
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: "207px", position: "absolute", right: "0%", transform: "translateY(-75%)"}}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", position: "relative"}}>
+  <div style = {{position: "relative", left: "80%"}}>
+    <img
+      className="d-block w-10"
+      src={require('../../images/achieve1.png')}
+      alt="Second slide"
+      height="230"
+      width="230"
+    />
+    <p style={{ textAlign: "right", position: "absolute", left: "0%" }}>
+      מכחגגמדכ מכחגדק כצרצע מחכגלע<br />
+      חעמכגע כלצד מעחכד ננעכ<br />
+      דלמיע חכגדן מכחגד החמכך<br />
+      מנכגד ניגחד תצקד שדגק מחכק<br />
+    </p>
+  </div>
+  <div style = {{position: "relative", left: "77%"}}>
+    <img
+      className="d-block w-10"
+      src={require('../../images/achieve2.png')}
+      alt="Second slide"
+      height="230"
+      width="230"
+    />
+    <p style={{ textAlign: "right", position: "absolute" }}>
+      מכחגגמדכ מכחגדק כצרצע מחכגלע<br />
+      חעמכגע כלצד מעחכד ננעכ<br />
+      דלמיע חכגדן מכחגד החמכך<br />
+      מנכגד ניגחד תצקד שדגק מחכק<br />
+    </p>
+  </div>
+  <div style = {{position: "relative", left: "75%"}}>
+    <img
+      className="d-block w-10"
+      src={require('../../images/achieve3.png')}
+      alt="Second slide"
+      height="230"
+      width="230"
+    />
+    <p style={{ textAlign: "right", position: "absolute" }}>
+      מכחגגמדכ מכחגדק כצרצע מחכגלע<br />
+      חעמכגע כלצד מעחכד ננעכ<br />
+      דלמיע חכגדן מכחגד החמכך<br />
+      מנכגד ניגחד תצקד שדגק מחכק<br />
+    </p>
+  </div>
+</div>
 
-
-    <div>
-
-      <img
-          className="d-block w-10"
-          src={require('../../images/achieve1.png')}
-          alt="Second slide"
-          height="230"
-          width = "230"/>
-
-        <p style = {{textAlign: "right"}}>
-            מכחגגמדכ מכחגדק כצרצע מחכגלע<br/>
-            חעמכגע כלצד מעחכד ננעכ<br/>
-            דלמיע חכגדן מכחגד החמכך<br/>
-            מנכגד ניגחד תצקד שדגק מחכק<br/>
-          </p>
-
-        </div>
-
-      <div>
-
-      <img
-          className="d-block w-10"
-          src={require('../../images/achieve2.png')}
-          alt="Second slide"
-          height="230"
-          width = "230"/>
-
-          <p style = {{textAlign: "right"}}>
-            מכחגגמדכ מכחגדק כצרצע מחכגלע<br/>
-            חעמכגע כלצד מעחכד ננעכ<br/>
-            דלמיע חכגדן מכחגד החמכך<br/>
-            מנכגד ניגחד תצקד שדגק מחכק<br/>
-          </p>
-
-    </div>
-
-    <div>
-
-      <img
-          className="d-block w-10"
-          src={require('../../images/achieve3.png')}
-          alt="Second slide"
-          height="230"
-          width = "230"/>
-
-          <p style = {{textAlign: "right"}}>
-            מכחגגמדכ מכחגדק כצרצע מחכגלע<br/>
-            חעמכגע כלצד מעחכד ננעכ<br/>
-            דלמיע חכגדן מכחגד החמכך<br/>
-            מנכגד ניגחד תצקד שדגק מחכק<br/>
-          </p>
-        
-        </div>
-
-      </div>
 
       <div id = 'callback'>
       <Callback />
