@@ -51,18 +51,18 @@ const HomePage = () => {
                                                               
              <div style={{ position: "relative", width: "310%", textAlign: 'right', left: "0%", bottom: "-12%" }}>
 
-            <Card style = {{ position: "relative", right: "140%", width: "200%", backgroundColor: 'rgba(245, 245, 245, 0.1)' }}>
+            <Card style = {{ position: "relative", right: "140%", width: "200%", backgroundColor: 'rgba(245, 245, 245, 0.1)', height: 540 }}>
             <Card.Body>
 
             <div style = {{height: "35px"}} />
 
             <h1 style={{ color: "white", width: "50%", borderRadius: '30px', position: "relative", right: "-25%",
                           boxShadow: '0 10px 12px 0 rgba(0, 0, 0, 0.3), 0 1px 30px 0 rgba(0, 0, 0, 0.30)'}} className="p-3 mb-2 bg-light text-dark d-flex align-items-center justify-content-center">בואו לשמוע על הקורס שלי</h1>
-
+            
             <div style = {{height: "65px"}} />
 
               
-            <h5 style={{ color: "white", position: "relative" }}>
+            <h5 style={{ color: "black", backgroundColor: 'white', padding: "28px", borderRadius: "8px", position: "relative", height: 300 }}>
 
                     שדמכקח כגפל עכגנג מחכגםר מררלג ןםחהכגצ צלרךק <br />
                     לוגכט יכגדמ כקךלדכ יעכמך יעכמך מחהכי נדלטמ חגדכ מוגכד כגון<br />
